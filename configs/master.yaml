@@ -1,0 +1,38 @@
+# ==================== V2Wall 主控端配置 ====================
+master:
+  # --- 管理端路径 ---
+  # 管理 API 的前缀路径，用于隐蔽管理入口。例如设置为 /admin-a3f2b1c5
+  # 所有管理及同步接口均挂载在该路径下。
+  admin_path: "/admin-a3f2b1c5"
+
+  # --- 认证密钥 ---
+  # JWT 签名密钥，用于签发和验证管理员 Token。务必修改为随机长字符串。
+  jwt_secret: "change-me-to-a-strong-random-string"
+
+  # 初始化 Token：首次创建管理员账户时所需的临时令牌（Bearer Token）。
+  # 仅在数据库无任何用户时有效，初始化后失效。
+  init_token: "init-secret-token"
+
+  # 同步 Token：被控端访问主控同步 API 时使用的身份凭证。
+  # 被控端的 sync_token 必须与此一致。
+  sync_token: "sync-secret-token"
+
+  # --- 服务端口 ---
+  # 管理端 Web 服务监听端口（仅提供 API 和前端，建议由 Nginx 反代）
+  listen_port: 8082
+
+  # 前端诱饵服务监听端口（直接记录扫描请求，建议由 Nginx 反代或直接暴露）
+  honeypot_port: 8081
+
+  # --- 数据库路径 ---
+  # BadgerDB 数据存储目录（自动创建）
+  db_path: "./data/badger"
+
+  # --- IP 地理信息数据库 ---
+  # ip2region 数据库文件路径（需自行下载或生成）
+  ipgeo_v4_path: "./data/ip2region_v4.xdb"
+  ipgeo_v6_path: "./data/ip2region_v6.xdb"
+
+  # 是否启用 IPv4 / IPv6 地理查询（若数据库文件缺失会导致启动失败）
+  enable_ipv4: true
+  enable_ipv6: true

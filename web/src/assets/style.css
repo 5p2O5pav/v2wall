@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+.data-table th, .data-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+button {
+  cursor: pointer;
+}
