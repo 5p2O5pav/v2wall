@@ -26,7 +26,7 @@ mv web/dist cmd/master/web/
 
 ```
 
-
+## 编译二进制文件
 ```bash
 cd /root/v2wall
 go get github.com/lionsoul2014/ip2region/binding/golang@latest
