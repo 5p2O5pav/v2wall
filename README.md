@@ -22,9 +22,9 @@ npm run build
 
 ## 移动整个 dist 目录
 ```bash
-mkdir -p cmd/master/web
+mkdir -p /root/v2wall/cmd/master/web
 
-mv web/dist cmd/master/web/
+mv /root/v2wall/web/dist /root/v2wall/cmd/master/web/
 
 ```
 
