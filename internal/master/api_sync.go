@@ -7,7 +7,7 @@ import (
 
 	"github.com/dgraph-io/badger/v4"
 	"github.com/gin-gonic/gin"
-	"github.com/yourorg/v2wall/internal/db"
+	"v2wall/internal/db"
 )
 
 // handleSyncBlacklist 返回当前需要阻断的 IP 数组

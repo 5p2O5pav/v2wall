@@ -3,7 +3,7 @@ package agent
 import (
 	"sync"
 
-	"github.com/yourorg/v2wall/internal/logwriter"
+	"v2wall/internal/logwriter"
 )
 
 type LogCollector struct {

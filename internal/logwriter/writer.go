@@ -6,8 +6,8 @@ import (
 
 	"github.com/dgraph-io/badger/v4"
 	"github.com/dgraph-io/badger/v4/y"
-	"github.com/yourorg/v2wall/internal/db"
-	"github.com/yourorg/v2wall/internal/ipgeo"
+	"v2wall/internal/db"
+	"v2wall/internal/ipgeo"
 )
 
 type LogEntry struct {

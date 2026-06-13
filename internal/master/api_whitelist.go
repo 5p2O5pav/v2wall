@@ -6,7 +6,7 @@ import (
 
 	"github.com/dgraph-io/badger/v4"
 	"github.com/gin-gonic/gin"
-	"github.com/yourorg/v2wall/internal/db"
+	"v2wall/internal/db"
 )
 
 type WhitelistEntry struct {

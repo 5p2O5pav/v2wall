@@ -5,9 +5,9 @@ import (
 
 	"github.com/dgraph-io/badger/v4"
 	"github.com/gin-gonic/gin"
-	"github.com/yourorg/v2wall/internal/config"
-	"github.com/yourorg/v2wall/internal/ipgeo"
-	"github.com/yourorg/v2wall/internal/logwriter"
+	"v2wall/internal/config"
+	"v2wall/internal/ipgeo"
+	"v2wall/internal/logwriter"
 )
 
 // handleReportLogs 接收被控端上报的日志数组，写入 BadgerDB

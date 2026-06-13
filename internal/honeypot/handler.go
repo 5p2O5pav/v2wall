@@ -9,9 +9,9 @@ import (
 
 	"github.com/dgraph-io/badger/v4"
 	"github.com/gin-gonic/gin"
-	"github.com/yourorg/v2wall/internal/db"
-	"github.com/yourorg/v2wall/internal/ipgeo"
-	"github.com/yourorg/v2wall/internal/logwriter"
+	"v2wall/internal/db"
+	"v2wall/internal/ipgeo"
+	"v2wall/internal/logwriter"
 )
 
 //go:embed static/index.html static/404.html

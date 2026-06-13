@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/yourorg/v2wall/internal/agent"
-	"github.com/yourorg/v2wall/internal/config"
+	"v2wall/internal/agent"
+	"v2wall/internal/config"
 )
 
 func main() {

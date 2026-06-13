@@ -11,12 +11,12 @@ import (
 
 	"github.com/gin-contrib/static"
 	"github.com/gin-gonic/gin"
-	"github.com/yourorg/v2wall/internal/cleanup"
-	"github.com/yourorg/v2wall/internal/config"
-	"github.com/yourorg/v2wall/internal/db"
-	"github.com/yourorg/v2wall/internal/honeypot"
-	"github.com/yourorg/v2wall/internal/ipgeo"
-	"github.com/yourorg/v2wall/internal/master"
+	"v2wall/internal/cleanup"
+	"v2wall/internal/config"
+	"v2wall/internal/db"
+	"v2wall/internal/honeypot"
+	"v2wall/internal/ipgeo"
+	"v2wall/internal/master"
 )
 
 //go:embed web/dist

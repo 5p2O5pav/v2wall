@@ -3,8 +3,8 @@ package master
 import (
 	"github.com/dgraph-io/badger/v4"
 	"github.com/gin-gonic/gin"
-	"github.com/yourorg/v2wall/internal/config"
-	"github.com/yourorg/v2wall/internal/ipgeo"
+	"v2wall/internal/config"
+	"v2wall/internal/ipgeo"
 )
 
 // RegisterAdminRoutes 在传入的 gin.Engine 上注册所有管理端 API 和同步 API。

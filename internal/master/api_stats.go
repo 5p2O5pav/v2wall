@@ -8,7 +8,7 @@ import (
 
 	"github.com/dgraph-io/badger/v4"
 	"github.com/gin-gonic/gin"
-	"github.com/yourorg/v2wall/internal/db"
+	"v2wall/internal/db"
 )
 
 // IPStat 用于列表展示的去重 IP 统计

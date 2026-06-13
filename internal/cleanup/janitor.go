@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/dgraph-io/badger/v4"
-	"github.com/yourorg/v2wall/internal/db"
+	"v2wall/internal/db"
 )
 
 // Janitor 定期清理过期数据

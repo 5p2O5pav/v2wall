@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/yourorg/v2wall/internal/config"
-	"github.com/yourorg/v2wall/internal/honeypot"
-	"github.com/yourorg/v2wall/internal/logwriter"
+	"v2wall/internal/config"
+	"v2wall/internal/honeypot"
+	"v2wall/internal/logwriter"
 )
 
 // Agent 被控端结构体

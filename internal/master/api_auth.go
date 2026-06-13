@@ -9,8 +9,8 @@ import (
 	"github.com/dgraph-io/badger/v4"
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/yourorg/v2wall/internal/config"
-	"github.com/yourorg/v2wall/internal/db"
+	"v2wall/internal/config"
+	"v2wall/internal/db"
 	"golang.org/x/crypto/bcrypt"
 )
 
