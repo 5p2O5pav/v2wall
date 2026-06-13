@@ -22,6 +22,8 @@ npm run build
 
 ## 移动整个 dist 目录
 ```bash
+mkdir -p cmd/master/web
+
 mv web/dist cmd/master/web/
 
 ```
