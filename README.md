@@ -27,12 +27,17 @@ mv web/dist cmd/master/web/
 ```
 
 
-
+```bash
 cd /root/v2wall
 go get github.com/lionsoul2014/ip2region/binding/golang@latest
 go mod tidy
 go mod download
 
+```
+
+
+```bash
 CGO_ENABLED=0 go build -ldflags="-s -w" -o bin/v2wall-master ./cmd/master
 
+```
 
