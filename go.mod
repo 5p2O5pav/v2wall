@@ -1,4 +1,4 @@
-module github.com/lisi-123/v2wall
+module github.com/yourorg/v2wall
 
 go 1.22
 
