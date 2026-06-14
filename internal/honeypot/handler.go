@@ -1,17 +1,15 @@
 package honeypot
 
 import (
-	"embed"
-	"io/fs"
-	"net"
-	"net/http"
-	"time"
+    "embed"
+    "net"
+    "net/http"
+    "time"
 
-	"github.com/dgraph-io/badger/v4"
-	"github.com/gin-gonic/gin"
-	"v2wall/internal/db"
-	"v2wall/internal/ipgeo"
-	"v2wall/internal/logwriter"
+    "github.com/dgraph-io/badger/v4"
+    "github.com/gin-gonic/gin"
+    "v2wall/internal/ipgeo"
+    "v2wall/internal/logwriter"
 )
 
 //go:embed static/index.html static/404.html
