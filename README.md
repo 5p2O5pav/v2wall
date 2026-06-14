@@ -42,3 +42,10 @@ CGO_ENABLED=0 go build -ldflags="-s -w" -o bin/v2wall-master ./cmd/master
 
 ```
 
+
+```bash
+wget -O ip2region_v4.xdb https://raw.githubusercontent.com/lionsoul2014/ip2region/master/data/ip2region_v4.xdb && \
+wget -O ip2region_v6.xdb https://raw.githubusercontent.com/lionsoul2014/ip2region/master/data/ip2region_v6.xdb
+
+
+```
