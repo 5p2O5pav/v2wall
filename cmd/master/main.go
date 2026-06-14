@@ -39,9 +39,6 @@ func main() {
 	}
 	defer bdb.Close()
 
-	// 注册 counter merge 操作
-	db.RegisterCounterMerge(bdb)
-
 	// 初始化 IP 地理查询
 	ipSearcher, err := ipgeo.NewSearcher(
 		cfg.Master.IPGeoV4,
@@ -63,7 +60,11 @@ func main() {
 	adminRouter := gin.Default()
 
 	// 挂载前端静态资源（必须在注册 API 路由前挂载，否则可能被 API 路由拦截）
-	adminRouter.Use(static.Serve("/", static.EmbedFolder(adminDist, "web/dist")))
+	staticFS, err := static.EmbedFolder(adminDist, "web/dist")
+	if err != nil {
+ 	   log.Fatalf("failed to load embedded static files: %v", err)
+	}
+	adminRouter.Use(static.Serve("/", staticFS))
 
 	// 注册管理 API 路由
 	master.RegisterAdminRoutes(adminRouter, bdb, ipSearcher, cfg)
