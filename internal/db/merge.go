@@ -7,7 +7,7 @@ import (
 )
 
 // getUint64 从字节切片中解码 uint64（大端序）
-func getUint64(val []byte) uint64 {
+func GetUint64(val []byte) uint64 {
 	if len(val) == 0 {
 		return 0
 	}
@@ -15,7 +15,7 @@ func getUint64(val []byte) uint64 {
 }
 
 // putUint64 将 uint64 编码为字节切片（大端序）
-func putUint64(v uint64) []byte {
+func PutUint64(v uint64) []byte {
 	b := make([]byte, 8)
 	binary.BigEndian.PutUint64(b, v)
 	return b
