@@ -5,7 +5,6 @@ import (
 	"fmt"
 
 	"github.com/dgraph-io/badger/v4"
-	"github.com/dgraph-io/badger/v4/y"
 	"v2wall/internal/db"
 	"v2wall/internal/ipgeo"
 )
@@ -56,7 +55,7 @@ func WriteLog(bdb *badger.DB, entry LogEntry, ipSearcher *ipgeo.Searcher, enable
 
 		// 3. 更新最后访问时间
 		lastSeenKey := db.LastSeenKey(entry.IP)
-		if err := txn.Set(lastSeenKey, putUint64(uint64(entry.Time))); err != nil {
+		if err := txn.Set(lastSeenKey, db.PutUint64(uint64(entry.Time))); err != nil {
 			return fmt.Errorf("set last_seen: %w", err)
 		}
 
